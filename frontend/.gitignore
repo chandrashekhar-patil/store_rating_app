@@ -1,0 +1,62 @@
+# === Common ===
+.env
+.env.*              # all .env variations (e.g., .env.local, .env.development)
+*.log
+*.tmp
+*.bak
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# === Node.js Backend ===
+node_modules/
+logs/
+pids/
+*.pid
+*.pid.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+build/
+coverage/
+pm2.log
+pm2.pid
+nodemon-debug.log
+
+# Optional SQLite or local DB files
+*.db
+*.sqlite
+
+# PM2 & runtime
+.pm2/
+
+# === Frontend (React, Vite, Next.js, etc.) ===
+**/node_modules/
+**/dist/
+**/build/
+.vite/
+.next/
+out/                  # Next.js static export
+.cache/
+coverage/
+*.tsbuildinfo         # TypeScript cache
+
+# Vercel/Netlify
+.vercel/
+.netlify/
+
+# === IDE/Editor Settings ===
+.vscode/
+.idea/
+*.code-workspace
+
+# === Git backup or merge conflict files ===
+*.orig
+*.rej
+
+# === Optional: Mac/Windows ===
+Icon?
+ehthumbs.db
+desktop.ini
